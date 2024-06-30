@@ -1,0 +1,287 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline-start: 1rem;
+  display: block;
+
+
+}
+li {
+list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1em;
+  border-bottom: 2px rgb(17, 106, 60) solid;
+}
+
+.header h1 {
+  line-height: 0.2rem;
+}
+
+@media only screen and (max-width: 613px) {
+
+  main {
+    display: block;
+    width: 98vh;
+    padding: 0;
+    margin: 0;
+
+ 
+  }
+  .profile-data {
+    width: 90%;
+  }
+
+  body {
+    margin-left: 1rem;
+    display: flex;
+    margin: 0;
+    width: 90%;
+    align-items: flex-start;
+  }
+  .profileGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+  flex-direction: column;
+
+  }
+  .profile {
+    display: flex;
+    height: 250px; 
+    
+
+    border: 2px rgb(17, 106, 60) solid;
+    border-radius: 25px 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    margin-right: 1rem;
+    box-shadow: 1px 1px 4px 2px rgba(128, 255, 0, 0.497);
+    background-color: #474747;
+    opacity: 0.8;
+    background-image: radial-gradient( ellipse farthest-corner at 4px 4px , #1e7932, #1e7932 50%, #e5e5f7 50%);
+    background-size: 4px 4px;}
+
+  .charges {
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    margin-right: 0.4rem;
+    
+    height: 60px;
+    width: 90%;
+    background-color: rgba(141, 141, 141, 0.511);
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.5rem;
+    overflow-y:scroll;
+    font-size: smaller;
+  }
+  .header {
+    display: block;
+    width: 80%;
+    height: auto;
+
+  }
+  .picsArea {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .littlePic {
+    width: 40vw;
+    height: 40vw;
+    outline: 0.4rem double #1e7932 ;
+    margin-top: 4px;
+    border: 2px #1e7932 solid;
+  }
+}
+
+.main {
+  width: 90vh;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  height: 250px;
+  margin: 0;
+  width: 90%;
+  border: 2px rgb(17, 106, 60) solid;
+  border-radius: 25px 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  margin-right: 1rem;
+  box-shadow: 1px 1px 4px 2px rgba(128, 255, 0, 0.497);
+  background-color: #474747;
+  opacity: 0.8;
+  background-image: radial-gradient( ellipse farthest-corner at 4px 4px , #1e7932, #1e7932 50%, #e5e5f7 50%);
+  background-size: 4px 4px;
+}
+.profile-data {
+ width: 90%;
+}
+
+
+.profile:hover {
+  border: 5px #1e7932 solid;
+  background-color: rgba(128, 255, 0, 1);
+  box-shadow: 2px 2px 8px 2px rgba(128, 255, 0, 1.497);
+}
+.profileGrid {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.data {
+  margin-left: 1rem;
+  width: 90%;
+
+  line-height: 0.9rem;
+  background-color: rgb(49, 49, 49);
+  padding-left: 0.51rem;
+
+}
+.pic {
+  border: 5px rgba(128, 255, 0, 0.497) solid;
+}
+
+.charges {
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  margin-right: 0.4rem;
+  max-height: 100px;
+max-width: 280px;
+  width: 90%;
+  background-color: rgba(141, 141, 141, 0.511);
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem;
+  overflow-y:scroll;
+  font-size: smaller;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #3cda8bcd);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.no-records {
+  padding: 0.1rem 1rem;
+  margin-top: 2rem;
+  outline: 0.4rem double #1e7932 ;
+  width: fit-content;
+  border: 2px #1e7932 solid;
+  filter: drop-shadow(0 0 2em #61dafbaa);
+
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  80% { border-color: orange; }
+}
+
+.completeProfile {
+  margin: 1rem 1rem;
+  display: inline;
+}
+
+.profile-data {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
+  gap: 2rem;
+  margin-left: 2rem;
+  border: 2px rgb(17, 106, 60) solid;
+  border-radius: 25px 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.info {
+  display: flex;
+  float: left;
+  
+}
+
+.info p {
+  line-height: 35px;
+
+  margin-left: 2rem;
+
+}
+
+.picsArea {
+  display: flex;
+
+
+
+}
+
+.littlePic {
+  width: 10vw;
+  height: 10vw;
+  outline: 0.4rem double #1e7932 ;
+  margin-top: 5px;
+  margin-left: 1rem;
+  border: 2px #1e7932 solid;
+
+}
+
+
+.littlePic:hover {
+  filter: drop-shadow(0 0 1em #3cda8bcd);
+  
+}
+
+.overSize {
+  width: 25vw;
+  height: 25vw;
+  outline: 0.4rem double #1e7932 ;
+  margin-top: 5px;
+  margin-left: 1rem;
+  border: 2px #1e7932 solid;
+  
+}
+
+.overSize:hover {
+  filter: drop-shadow(0 0 1em #3cda8bcd);
+  
+}
+
+.hideInfo {
+  display: none;
+}
+
+
+
+  

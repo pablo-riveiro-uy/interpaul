@@ -107,8 +107,15 @@ li {
   }
 
   .littlePic {
-    width: 80vw;
-    height: 80vw;
+    width: 15vw !important;
+    height: 15vw !important;
+    outline: 0.4rem double #1e7932;
+    margin-top: 4px;
+    border: 2px #1e7932 solid;
+  }
+  .overSize {
+    width: 70vw !important;
+    height: 70vw !important;
     outline: 0.4rem double #1e7932;
     margin-top: 4px;
     border: 2px #1e7932 solid;
@@ -303,8 +310,8 @@ body {
 }
 
 .littlePic {
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
   outline: 0.4rem double #1e7932;
   margin-top: 5px;
   margin-left: 1rem;
@@ -321,8 +328,8 @@ body {
 }
 
 .overSize {
-  width: 17vw;
-  height: 17vw;
+  width: 15vw;
+  height: 15vw;
   outline: 0.4rem double #1e7932;
   margin-top: 5px;
   margin-left: 1rem;

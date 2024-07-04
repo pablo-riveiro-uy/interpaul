@@ -206,6 +206,16 @@ max-width: 280px;
     blink-caret .75s step-end infinite;
 }
 
+.alowed {
+  padding: 0.1rem 1rem;
+  margin-top: 2rem;
+  outline: 0.4rem double #92cfec ;
+  width: fit-content;
+  border: 2px #309bda solid;
+  filter: drop-shadow(0 0 2em #61dafbaa);
+
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -292,6 +302,43 @@ max-width: 280px;
   display: none;
 }
 
+.radioForm {
+  width: 60%;
+  color: rgb(255, 255, 255);
+  
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: chartreuse;
+  margin: 0;
+  font: inherit;
+  color: #b2b2b2;
+  width: 1em;
+  height: 1em;
+  margin-right: 1rem;
+  border: 0.25em solid gray;
+  border-radius: 50%;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
 
 
   

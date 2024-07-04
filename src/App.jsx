@@ -13,7 +13,8 @@ function App() {
     <>
   <Header />
     <main>
-      {!rightAnswer ? <Login /> : <GetProfiles/>}
+      {console.log('rightanswe', rightAnswer)}
+      {rightAnswer === false ? <Login answer={setRightAnswer}/> : <GetProfiles/>}
      
     </main>
     <Footer/>

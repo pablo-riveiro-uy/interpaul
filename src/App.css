@@ -3,13 +3,14 @@
   width: 100%;
   margin: 0 50px auto;
   padding-inline-start: 1rem;
-  display: block; 
+  display: block;
   background-color: #474747;
   color: #e5e5f7;
 
 }
+
 li {
-list-style: none;
+  list-style: none;
 }
 
 .header {
@@ -30,8 +31,9 @@ list-style: none;
     width: 90%;
     padding: 0;
     margin: auto;
- 
+
   }
+
   .profile-data {
     width: 100%;
 
@@ -44,35 +46,41 @@ list-style: none;
     width: 100%;
     align-items: flex-start;
   }
+
   .profileGrid {
     display: flex;
     flex-wrap: wrap;
 
-   
-  flex-direction: column;
+    margin-left: -80px;
+
+    flex-direction: column;
 
   }
+
   .profile {
     display: flex;
-    height: 250px; 
+    height: 250px;
     border: 2px rgb(17, 106, 60) solid;
     border-radius: 25px 5px;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    margin-left: 0;
     text-align: left;
 
     box-shadow: 1px 1px 4px 2px rgba(128, 255, 0, 0.497);
     background-color: #474747;
     opacity: 0.8;
-    background-image: radial-gradient( ellipse farthest-corner at 4px 4px , #1e7932, #1e7932 50%, #e5e5f7 50%);
+    background-image: radial-gradient(ellipse farthest-corner at 4px 4px, #1e7932, #1e7932 50%, #e5e5f7 50%);
 
   }
+
   .profile-data {
     min-width: 300px;
 
 
-   
-   }
+
+  }
+
   .charges {
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     margin-right: 0.4rem;
@@ -82,27 +90,30 @@ list-style: none;
     background-color: rgba(141, 141, 141, 0.511);
     color: rgb(255, 255, 255);
     margin-bottom: 0.5rem;
-    overflow-y:scroll;
+    overflow-y: scroll;
     font-size: smaller;
   }
+
   .header {
     display: block;
     width: 80%;
     height: auto;
 
   }
+
   .picsArea {
     display: flex;
     flex-direction: row;
   }
-  
+
   .littlePic {
-    width: 40vw;
-    height: 40vw;
-    outline: 0.4rem double #1e7932 ;
+    width: 80vw;
+    height: 80vw;
+    outline: 0.4rem double #1e7932;
     margin-top: 4px;
     border: 2px #1e7932 solid;
   }
+
 }
 
 body {
@@ -128,11 +139,12 @@ body {
   box-shadow: 1px 1px 4px 2px rgba(128, 255, 0, 0.497);
   background-color: #474747;
   opacity: 0.8;
-  background-image: radial-gradient( ellipse farthest-corner at 4px 4px , #1e7932, #1e7932 50%, #e5e5f7 50%);
+  background-image: radial-gradient(ellipse farthest-corner at 4px 4px, #1e7932, #1e7932 50%, #e5e5f7 50%);
   background-size: 4px 4px;
 }
+
 .profile-data {
- max-width: 320px;
+  max-width: 320px;
 
 }
 
@@ -142,11 +154,13 @@ body {
   background-color: rgba(128, 255, 0, 1);
   box-shadow: 2px 2px 8px 2px rgba(128, 255, 0, 1.497);
 }
+
 .profileGrid {
   display: flex;
   flex-wrap: wrap;
-  
+
 }
+
 .data {
   margin-left: 1rem;
   width: 90%;
@@ -156,6 +170,7 @@ body {
   padding-left: 0.51rem;
 
 }
+
 .pic {
   border: 5px rgba(128, 255, 0, 0.497) solid;
 }
@@ -164,12 +179,12 @@ body {
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
   margin-right: 0.4rem;
   max-height: 100px;
-max-width: 280px;
+  max-width: 280px;
   width: 90%;
   background-color: rgba(141, 141, 141, 0.511);
   color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
-  overflow-y:scroll;
+  overflow-y: scroll;
   font-size: smaller;
 }
 
@@ -179,9 +194,11 @@ max-width: 280px;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #3cda8bcd);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -189,7 +206,7 @@ max-width: 280px;
 .no-records {
   padding: 0.1rem 1rem;
   margin-top: 2rem;
-  outline: 0.4rem double #1e7932 ;
+  outline: 0.4rem double #1e7932;
   width: fit-content;
   border: 2px #1e7932 solid;
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -197,12 +214,17 @@ max-width: 280px;
 }
 
 .typewriter p {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
     typing 1.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
@@ -210,7 +232,7 @@ max-width: 280px;
 .alowed {
   padding: 0.1rem 1rem;
   margin-top: 2rem;
-  outline: 0.4rem double #92cfec ;
+  outline: 0.4rem double #92cfec;
   width: fit-content;
   border: 2px #309bda solid;
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -219,14 +241,26 @@ max-width: 280px;
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  80% { border-color: orange; }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  80% {
+    border-color: orange;
+  }
 }
 
 .completeProfile {
@@ -251,7 +285,7 @@ max-width: 280px;
 .info {
   display: flex;
   float: left;
-  
+
 }
 
 .info p {
@@ -271,7 +305,7 @@ max-width: 280px;
 .littlePic {
   width: 10vw;
   height: 10vw;
-  outline: 0.4rem double #1e7932 ;
+  outline: 0.4rem double #1e7932;
   margin-top: 5px;
   margin-left: 1rem;
   border: 2px #1e7932 solid;
@@ -283,22 +317,22 @@ max-width: 280px;
 
 .littlePic:hover {
   filter: drop-shadow(0 0 1em #3cda8bcd);
-  
+
 }
 
 .overSize {
   width: 17vw;
   height: 17vw;
-  outline: 0.4rem double #1e7932 ;
+  outline: 0.4rem double #1e7932;
   margin-top: 5px;
   margin-left: 1rem;
   border: 2px #1e7932 solid;
-  
+
 }
 
 .overSize:hover {
   filter: drop-shadow(0 0 1em #3cda8bcd);
-  
+
 }
 
 .hideInfo {
@@ -308,7 +342,7 @@ max-width: 280px;
 .radioForm {
   width: 60%;
   color: rgb(255, 255, 255);
-  
+
 }
 
 input[type="radio"]:focus {
@@ -342,6 +376,3 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
-
-
-  

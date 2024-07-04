@@ -34,6 +34,7 @@ list-style: none;
   }
   .profile-data {
     width: 100%;
+
   }
 
   body {
@@ -274,6 +275,8 @@ max-width: 280px;
   margin-top: 5px;
   margin-left: 1rem;
   border: 2px #1e7932 solid;
+  align-items: flex-start;
+
 
 }
 
@@ -284,8 +287,8 @@ max-width: 280px;
 }
 
 .overSize {
-  width: 25vw;
-  height: 25vw;
+  width: 17vw;
+  height: 17vw;
   outline: 0.4rem double #1e7932 ;
   margin-top: 5px;
   margin-left: 1rem;

@@ -21,16 +21,16 @@ const GetProfiles = () => {
 
   const [isActive, setActive] = useState(false);
   const ToggleClass = () => {
-        setActive(!isActive); 
-   };
+    setActive(!isActive);
+  };
 
-   // toggle vissible extra info
+  // toggle vissible extra info
 
   const [isVisible, setVisible] = useState(false);
   const ToggleVisible = () => {
     playHover();
-    setVisible(!isVisible); 
-   };
+    setVisible(!isVisible);
+  };
 
   // Manejador de eventos para actualizar el estado con el país seleccionado
   const handleCountryChange = (event) => {
@@ -62,6 +62,7 @@ const GetProfiles = () => {
       try {
         const extendedProfiles = await Promise.all(
           peoplePage.map(async (p) => {
+
             const response = await fetch(p._links.self.href);
             if (!response.ok) {
               throw new Error('Network response was not ok');
@@ -135,9 +136,11 @@ const GetProfiles = () => {
               <li key={p.entity_id}>
                 <div className="profile" onClick={ToggleVisible}>
                   <div>
-                    {p._links.thumbnail.href && p._links.thumbnail.href != null ? 
-                      <img className='pic' src={p._links.thumbnail.href} alt="Profile thumbnail" /> : <p>No image</p>
+                    {p._links.thumbnail && p._links.thumbnail.href ?
+                      <img className='pic' src={p._links.thumbnail.href} alt="Profile thumbnail" />
+                      : <p>No image</p>
                     }
+
                   </div>
 
                   <div className="data">
@@ -151,9 +154,7 @@ const GetProfiles = () => {
                     )}
                   </div>
                 </div>
-                <div className="extendedData">
 
-                </div>
               </li>
 
 
@@ -182,10 +183,11 @@ const GetProfiles = () => {
 
 
               )}
-              {allImages.length  > 0 && allImages[index] ?  (
+              {allImages.length > 0 && allImages[index] && allImages[index].length >=2 ? (
                 allImages[index].map((image) => (
                   <div className="picsArea">
-                    <img className={!isActive ? "littlePic" : "overSize" } src={image._links.self.href} alt='extra image' onMouseOver={playHover} onClick={ToggleClass}/>
+                    <img className={!isActive ? "littlePic" : "overSize"} src={image._links.self.href} alt='extra image' onMouseOver={playHover} onClick={ToggleClass} />
+                    
                   </div>
                 ))
               ) : <p>No more images</p>}

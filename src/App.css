@@ -3,10 +3,18 @@
   width: 100%;
   margin: 0 50px auto;
   padding-inline-start: 1rem;
-  display: block;
+  display: block; 
   background-color: #474747;
   color: #e5e5f7;
 
+}
+
+h2 a {
+  color: #e5e5f7;
+  text-decoration: inherit; 
+}
+h2 a:hover {
+  color: rgba(130, 245, 16, 0.815);
 }
 
 li {
@@ -121,6 +129,16 @@ li {
     border: 2px #1e7932 solid;
   }
 
+  
+  .footer .linkTag {
+    display: flex;
+    padding: 10px;
+  
+  }
+  .footer  p {
+      line-height: 69px;
+  }
+
 }
 
 body {
@@ -207,7 +225,7 @@ body {
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em rgba(128, 255, 0, 0.497)#61dafbaa);
 }
 
 .no-records {
@@ -382,4 +400,28 @@ input[type="radio"]::before {
 
 input[type="radio"]:checked::before {
   transform: scale(1);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  text-align: center;
+  padding-top: 15px 20px;
+  background-color: rgba(141, 141, 141, 0.511);
+}
+
+.footer .linkTag {
+  display: flex;
+  padding: 10px;
+
+}
+.footer  p {
+    line-height: 69px;
+}
+
+.githubIcon {
+  width: 30px;
+  height: 30px;
+  padding: 25px;
 }

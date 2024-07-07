@@ -145,7 +145,7 @@ const GetProfiles = () => {
 
                   <div className="data">
                     <h4>Name:</h4>
-                    <p>{capitalizeName(p.forename)} {capitalizeName(p.name)}</p>
+                    <p>{capitalizeName(p.forename)}  {capitalizeName(p.name)}</p>
                     {allInfo[index] && (
                       <div>
                         <h4>Charges:</h4>

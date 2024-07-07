@@ -1,4 +1,4 @@
-# INTERPAUL UI 80's style
+# INTERPAUL 80's style
 
 This is a version of an interpol page as if could appear on a 80's movie.
 It runs with the real public data given by the official interpol API. 
@@ -11,7 +11,7 @@ to execute the web server on your browser
 
 # ALSO IN THIS WEB
 
-I use an open API with trivia question to put some emotion to the login component. This way you have to acreditate as an angel knowing the right answer for the trivia to have access to criminal file.
+I use an open API with trivia question to put some emotion to the login component. This way you have to acreditate as a real smart agent knowing the right answer for the trivia to have access to criminal file.
 
 You can find this api on https://opentdb.com/
 

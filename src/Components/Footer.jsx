@@ -6,11 +6,11 @@ export default function Footer() {
             <div className='linkTag'>
 
                 <img className='githubIcon' src='https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000' />
-                <h2>
+                <h4>
                     <a href='https://github.com/pablo-riveiro-uy'> Builded by Pablo Riveiro</a>
-                </h2>
+                </h4>
             </div>
-                <p>©️ 2024</p>
+            <p>©️ 2024</p>
         </div>
     )
 }

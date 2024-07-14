@@ -16,6 +16,15 @@ export default function Login({ answer }) {
 
   };
 
+  const cleanSpecialCharacters = (text) => {
+    let newText = text.replace(/&quot;/g, '"');
+    if (newText.includes('&#039;')) {
+      newText = newText.replace('&#039;','´')
+      }
+    console.log('clean text:', newText);
+    return newText;
+  };
+
   const fetchQuiz = async () => {
     try {
       const response = await fetch(`https://opentdb.com/api.php?amount=1&type=multiple`);
@@ -24,6 +33,7 @@ export default function Login({ answer }) {
       }
       const data = await response.json();
       setQuizData(data.results[0]);
+      console.log(quizData)
     } catch (error) {
       console.error('Error fetching quiz:', error);
     }
@@ -52,7 +62,7 @@ export default function Login({ answer }) {
 
       <fieldset className='radioForm'>
         <legend>Answer the secret question to enter INTERPAUL database</legend>
-        <p>{quizData.question}</p>
+        <p>{cleanSpecialCharacters(quizData.question)}</p>
         {quizData.incorrect_answers.map((option, key) => (
           <div className='options' key={key}>
             <input className='costumedRadio'
@@ -77,9 +87,11 @@ export default function Login({ answer }) {
             onChange={handleRadioChange}
           />
           <label htmlFor={quizData.correct_answer}>{quizData.correct_answer}</label>
+          <br></br>
         </div>
         {console.log('selected value', selectedValue)}
       </fieldset>
+          <p className="clue">CLUE for newbie agents: Often the answer is the last thing you thought of.</p>
       {message}
     </>
   );

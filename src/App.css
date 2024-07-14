@@ -9,11 +9,11 @@
 
 }
 
-h2 a {
+h4 a {
   color: #e5e5f7;
-  text-decoration: inherit; 
+
 }
-h2 a:hover {
+h4:hover {
   color: rgba(130, 245, 16, 0.815);
 }
 
@@ -402,20 +402,41 @@ input[type="radio"]:checked::before {
   transform: scale(1);
 }
 
+.clue {
+  margin-top: 20px;
+  font-style: italic;
+  
+}
+
 .footer {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 3rem;
+   margin-top: 3rem;
   text-align: center;
-  padding-top: 15px 20px;
+  color: aliceblue;
   background-color: rgba(141, 141, 141, 0.511);
+  align-items: center;
+  justify-content: center;
 }
 
 .footer .linkTag {
   display: flex;
   padding: 10px;
+  width: 60%;
+  line-height: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #b2b2b2;
 
+
+ 
 }
+
+.linkTag h4 {
+  margin: 0 auto;
+}
+
+
 .footer  p {
     line-height: 69px;
 }
